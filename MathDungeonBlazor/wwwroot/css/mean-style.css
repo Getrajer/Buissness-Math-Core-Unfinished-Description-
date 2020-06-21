@@ -1,0 +1,357 @@
+﻿body {
+}
+
+
+
+.component_container{
+    padding: 8em 5em;
+}
+
+.bacground {
+    color: white;
+    width: 100%;
+    padding: 5em 3em;
+    background: rgba(88, 122, 239, 0.71);
+}
+
+.calculation_container {
+    background-color: rgba(88, 122, 239, 0.86);
+    padding: 2em;
+}
+
+.description_function {
+    padding: 1em 0;
+}
+
+.input_container{
+    padding: 2em 0;
+}
+
+input {
+    border-radius: 9px;
+    background: #587aef;
+    box-shadow: 10px 10px 20px #5474e3, -10px -10px 20px #5c80fb;
+    color: white;
+    border: none;
+    padding: 0.3em;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 0.3em;
+}
+
+input:focus{
+    border-radius: 9px;
+    background: #587aef;
+    box-shadow:  -10px -10px 20px #5474e3, 
+             10px 10px 20px #5c80fb;
+}
+
+label{
+    padding-right: 0.5em;
+    font-size: 1.1rem;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+
+.btn {
+    border-radius: 9px;
+    background: #587aef;
+    box-shadow: 10px 10px 20px #5474e3, -10px -10px 20px #5c80fb;
+    color: white;
+    padding: 0.3em;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: 0.1s all ease;
+    margin-right: 0.3em;
+}
+
+.btn:hover{
+    border-radius: 9px;
+    background: #3a63ef;
+    box-shadow: 10px 10px 20px #5474e3, -10px -10px 20px #5c80fb;
+    color:white;
+
+}
+
+.btn:active {
+    border-radius: 9px;
+    background: #587aef;
+    box-shadow:  -10px -10px 20px #5474e3, 
+             10px 10px 20px #5c80fb;
+    color:white;
+}
+
+/*
+    Simple mean calculation style
+*/
+
+.calculation {
+    border-radius: 9px;
+    background: #587aef;
+    box-shadow: 10px 10px 20px #5474e3, -10px -10px 20px #5c80fb;
+    padding: 3em 1em;
+    margin-top: 2em;
+    font-size: 1.3rem;
+}
+
+
+.input_container{
+    padding-bottom:3em;
+}
+
+.result_container{
+    padding-top:3em;
+}
+
+.eqation-underline-container {
+    width: 100%;
+}
+
+.eqation-underline-container .underline{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+.calc_info_txt{
+    padding: 1em 0;
+}
+
+.result_text {
+    border-radius: 0;
+    background: #587aef;
+    box-shadow: 10px 10px 20px #5474e3, -10px -10px 20px #5c80fb;
+    display: block;
+    margin-top: 3em;
+    width: auto;
+    text-align: center;
+    padding: 0.3em;
+    transition: 0.5s;
+}
+
+.result_text:hover{
+    transform: translateY(-5px);
+}
+
+#Sigma {
+    margin-bottom: 0.3em;
+    fill:white;
+}
+
+
+/*
+    .......................................................................
+*/
+
+/*
+    Frequency mean calculation style
+*/
+
+.program_container {
+    margin-top: 4em;
+    background: #587aef;
+    padding: 2em;
+}
+
+.button-container{
+    padding: 1em 0;
+}
+
+.input_box{
+    padding: 1em 0;
+}
+
+.input_box label{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0 2em 0 0;
+}
+
+.calculation_table {
+    padding: 0 13em;
+}
+
+.table_calc {
+    width: 100%;
+    color: white;
+    font-weight: 600;
+}
+
+tr {
+    border: none;
+    padding: 1em;
+}
+
+td, th {
+    padding: 1em;
+}
+
+.data_title {
+    border-radius: 0;
+    background: #587aef;
+    box-shadow: 10px 10px 20px #5474e3, -10px -10px 20px #5c80fb;
+    padding: 0.5em;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.data {
+    border-radius: 0;
+    background: #587aef;
+    box-shadow: 10px 10px 20px #5474e3, -10px -10px 20px #5c80fb;
+    padding: 0.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.data:hover{
+    border-radius: 3px;
+    background: #4369ed;
+    box-shadow:  10px 10px 20px #5474e3, 
+             -10px -10px 20px #5c80fb;
+    transform: translateY(-5px);
+}
+
+.formula_container{
+    padding:3em 2em;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+
+.variables_container {
+    margin-top: 2em;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+/*Small table*/
+.table_calc_small {
+    width: 100%;
+    color: white;
+    font-weight: 600;
+}
+
+.small_tr {
+    border: none;
+    padding: 0.2em;
+}
+
+.small_td, .small_th {
+    padding: 0.2em;
+}
+
+.data_title_small {
+    border-radius: 0;
+    background: #587aef;
+    padding: 0.5em;
+    font-size: 0.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.data_small {
+    border-radius: 0;
+    background: #587aef;
+    padding: 0.5em;
+    font-size: 0.5rem;
+    font-weight: 600;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.data_small:hover{
+    border-radius: 3px;
+    background: #4369ed;
+    transform: translateY(-5px);
+}
+
+
+@media screen and (max-width: 1700px) {
+    .calculation_table {
+        padding: 0 10em;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .calculation_table {
+        padding: 0 5em;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .component_container {
+        padding: 8em 2em;
+    }
+
+    .calculation_table {
+        padding: 0 2em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .component_container {
+        padding: 8em 1em;
+    }
+
+    .calculation_table {
+        padding: 0 1em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .component_container {
+        padding: 8em 1em;
+    }
+
+    .calculation_table {
+        padding: 0;
+    }
+
+    tr {
+        padding: 0.8em 0.3em;
+    }
+
+    td, th {
+        padding: 0.8em 0.3em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .component_container {
+        padding: 8em 1em;
+    }
+
+    .mean_calculation_container {
+        padding: 0.5em;
+    }
+
+    .mean_frequency_distribution_container {
+        padding: 0.5em;
+    }
+    .bacground{
+        padding: 1em 0.5em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .component_container {
+        padding: 8em 0em;
+    }
+    .mean_frequency_distribution_container {
+        padding: 0em;
+    }
+
+    tr {
+        padding: 1em 0.1em;
+    }
+
+    td, th {
+        padding: 1em 0.1em;
+    }
+}
+

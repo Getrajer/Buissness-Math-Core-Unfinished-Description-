@@ -1,0 +1,23 @@
+﻿
+
+
+
+.graph_conrainer {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+}
+
+.graph {
+    position: relative;
+    margin-top: 5em;
+    display: block;
+    padding:1em;
+    color: white;
+    background: #587aef;
+    box-shadow: 10px 10px 20px #5474e3, -10px -10px 20px #5c80fb;
+}
+
+
+

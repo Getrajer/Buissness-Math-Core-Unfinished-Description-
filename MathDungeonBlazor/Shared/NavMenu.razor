@@ -1,0 +1,61 @@
+﻿<div class="top-nav">
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <i class="fa fa-bars"></i>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass">
+    <button class="navbar-toggler-in" @onclick="ToggleNavMenu">
+        <i class="fa fa-times-circle"></i>
+    </button>
+    <nav class="navbar">
+        <ul class="navbar">
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="LinearFunction" Match="NavLinkMatch.All" @onclick="ToggleNavMenu">
+                    <span class="oi oi-home" aria-hidden="true"></span> Linear Function
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All" @onclick="ToggleNavMenu">
+                    <span class="oi oi-home" aria-hidden="true"></span> Home
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="counter" @onclick="ToggleNavMenu">
+                    <span class="oi oi-plus" aria-hidden="true"></span> Counter
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="Mean" @onclick="ToggleNavMenu">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Mean
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="Mode" @onclick="ToggleNavMenu">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Mode
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="Median" @onclick="ToggleNavMenu">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Median
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="StandardDeviation" @onclick="ToggleNavMenu">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Standard Deviation
+                </NavLink>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+@code {
+    bool collapseNavMenu = true;
+
+    string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

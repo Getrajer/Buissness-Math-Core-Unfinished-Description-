@@ -1,0 +1,154 @@
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+html, body {
+    font-family: 'Muli', sans-serif;
+    padding: 0;
+}
+
+.flexContainer{
+    display: flex;
+    justify-content:center;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../images/close-up-shot-of-black-computer-keyboard-1010496.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+ul li{
+    list-style:none;
+}
+
+.top-nav {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    background-color: #000000;
+    z-index: 100;
+    padding: 0.9em 0;
+
+}
+
+.top-nav .navbar-toggler{
+    background-color: #00a100;
+    height:100%;
+
+}
+
+
+.top-nav a i{
+    color: white;
+    font-size:1.5rem;
+    float: right;
+    padding: 0 0.4em;
+    transition: 0.3s all;
+
+}
+.top-nav a i:hover{
+    color:#20FC20;
+    
+
+}
+
+
+.navbar{
+    top:-60px;
+    height: calc(100vh + 60px);
+    position:fixed;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.82);
+    z-index:100;
+    color:white;
+
+}
+
+
+.navbar i{
+    color:white;
+
+}
+.navbar-toggler-in {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    z-index: 999;
+    color: black;
+    background-color: #00a100;
+    border:none;
+
+    width:45px;
+    height:35px;
+}
+.nav-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-content li a{
+    font-size: 2rem;
+    color:white;
+    padding:1em;
+    transition: 0.3s;
+}
+
+.nav-content li a:hover{
+    color:rgb(183, 0, 168);
+}
+
+
+
+/*
+    In process
+*/
+.sucess {
+    font-weight: 600;
+    color: #9147ff;
+    font-size: 1.1rem;
+    padding-left: 1em;
+    margin-top: 0.5em;
+}
+
+.error {
+    font-weight: 600;
+    color: red;
+    font-size: 1.1rem;
+    padding-left: 1em;
+    margin-top: 0.5em;
+}
+
+.visible {
+    display: inline-block !important;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #19090F;
+    color: #F3FCF2;
+    padding: 1em;
+}
+
+main {
+    max-width: 1500px;
+}
+

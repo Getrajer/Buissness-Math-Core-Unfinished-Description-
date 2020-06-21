@@ -1,0 +1,69 @@
+﻿@page "/LinearFunction"
+@inherits LinearFunctionBase
+<head>
+    <link rel="stylesheet" href="../css/mean-style.css" />
+    <link rel="stylesheet" href="../css/graph-style.css"/>
+</head>
+
+
+<h2>Linear Line Chart</h2>
+
+
+
+
+<div class="component_container">
+    <div class="bacground">
+
+        <section class="calculation_container">
+
+            <div class="description_container">
+                <div class="heading_container">
+                    <h2>Title</h2>
+                </div>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+            </div>
+
+            <article class="theory_container">
+                <div class="heading_container">
+                    <h2>Title</h2>
+                </div>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+            </article>
+
+            <div class="function_container">
+                <div class="heading_container">
+                    <h3>Title</h3>
+                </div>
+                <div class="description_function">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has </p>
+                </div>
+
+                <div class="input_container">
+                    <p>y = a + bx</p>
+                    <br />
+                    <p><label>a</label>  <input @bind="a" /></p>
+                    <p><label>b</label>   <input @bind="b" /></p>
+                    <p>Range: <input @bind="range" /> </p>
+                </div>
+
+                <button class="btn" @onclick="CalculateLinearFunction">Calculate Linear Function</button>
+
+                <button class="btn" @onclick="Reset">Reset</button>
+
+
+            </div>
+
+            <div class="graph_container">
+                <div class="graph">
+                    <ChartJsLineChart @ref="_lineChartJs" Config="@_lineConfig" Width="1000" Height="700" />
+                </div>
+            </div>
+
+        </section>
+        <!--............................................-->
+    </div>
+</div>
